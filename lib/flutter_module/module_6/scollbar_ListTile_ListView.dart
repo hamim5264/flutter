@@ -30,7 +30,8 @@ class HomeScreen extends StatelessWidget{
         toolbarHeight: 80,
         backgroundColor: Colors.pink,
       ),
-      body: Scrollbar(
+      body:
+      Scrollbar(
         thickness: 10,
         radius: Radius.circular(20),
         child: ListView(
@@ -71,7 +72,8 @@ class HomeScreen extends StatelessWidget{
           ],
         ),
       ),
-        /*
+
+      /*
       Scrollbar(
         thickness: 8,
         radius: Radius.circular(10),
@@ -97,8 +99,7 @@ class HomeScreen extends StatelessWidget{
           ),
         ),
       ),
-
-         */
+      */
     );
   }
 
