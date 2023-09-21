@@ -26,6 +26,7 @@ class screen extends StatelessWidget{
         child: CircularProgressIndicator(
           color: Colors.red,
           strokeWidth: 5,
+          backgroundColor: Colors.black,
 
         ),
       ),
