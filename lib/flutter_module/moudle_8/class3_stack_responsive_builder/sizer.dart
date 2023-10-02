@@ -44,7 +44,7 @@ class Homepage extends StatelessWidget{
             child: Text(
               sizeInformation.deviceScreenType.toString(),
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 25.w,
               ),
             ),
           );
