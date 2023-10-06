@@ -40,6 +40,9 @@ dependencies:
   responsive_builder: ^0.7.0
   device_preview: ^1.1.0
   sizer: ^2.0.15
+  intl: ^0.18.1
+
+
 
 
 
