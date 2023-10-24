@@ -44,7 +44,11 @@ class homescreen extends StatelessWidget{
       ),
       body: GridView.builder(
         itemCount: picItems.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            //crossAxisSpacing: 1,
+            //childAspectRatio: 1.2,
+          ),
           itemBuilder: (context, index){
           return GestureDetector(
             onTap: (){mysnackbar(context, picItems[index] ["title"]);},

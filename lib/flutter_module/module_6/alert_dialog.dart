@@ -19,7 +19,7 @@ class myapp extends StatelessWidget {
 class Home extends StatelessWidget {
   mySnackbar(message, context) {
     ScaffoldMessenger.of(context)
-        .showSnackBar(SnackBar(content: Text(message)));
+        .showSnackBar(SnackBar(content: Text(message),backgroundColor: Colors.green,));
   }
 
   myAlert(context) {
