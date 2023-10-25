@@ -27,6 +27,7 @@ class HomeScreen extends StatelessWidget{
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Switch(value: true, onChanged: (bool value){}),
+          Switch.adaptive(value: false, onChanged: (bool value){}),
           ElevatedButton(
               onPressed: (){
                 showDialog(
