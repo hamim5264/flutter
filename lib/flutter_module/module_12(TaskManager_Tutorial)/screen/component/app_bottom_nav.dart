@@ -5,11 +5,14 @@ import 'package:ostad_flutter_project/flutter_module/module_12(TaskManager_Tutor
 BottomNavigationBar appBottomNav(currentIndex, onItemTapped) {
   return BottomNavigationBar(
     items: const [
-      BottomNavigationBarItem(icon: Icon(CupertinoIcons.news_solid), label: "New"),
       BottomNavigationBarItem(
-          icon: Icon(CupertinoIcons.arrow_2_circlepath_circle_fill), label: "Progress"),
+          icon: Icon(CupertinoIcons.news_solid), label: "New"),
       BottomNavigationBarItem(
-          icon: Icon(CupertinoIcons.arrowtriangle_right_square_fill), label: "Completed"),
+          icon: Icon(CupertinoIcons.arrow_2_circlepath_circle_fill),
+          label: "Progress"),
+      BottomNavigationBarItem(
+          icon: Icon(CupertinoIcons.arrowtriangle_right_square_fill),
+          label: "Completed"),
       BottomNavigationBarItem(
           icon: Icon(CupertinoIcons.clear_circled_solid), label: "Canceled"),
     ],

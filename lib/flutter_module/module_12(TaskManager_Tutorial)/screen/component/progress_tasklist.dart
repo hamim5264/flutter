@@ -135,7 +135,10 @@ class _ProgressTaskListState extends State<ProgressTaskList> {
   Widget build(BuildContext context) {
     return isLoading
         ? (const Center(
-            child: CircularProgressIndicator(backgroundColor: Colors.green,color: Colors.white,),
+            child: CircularProgressIndicator(
+              backgroundColor: Colors.green,
+              color: Colors.white,
+            ),
           ))
         : RefreshIndicator(
             onRefresh: () async {

@@ -13,7 +13,6 @@ Future<void> writeUserData(userData) async {
   await prefs.setString("photo", userData["data"]["photo"]);
 }
 
-
 Future<void> writeEmailVerification(email) async {
   final prefs = await SharedPreferences.getInstance();
   await prefs.setString("EmailVerification", email);

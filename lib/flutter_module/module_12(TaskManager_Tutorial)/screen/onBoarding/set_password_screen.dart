@@ -46,9 +46,9 @@ class _SetPasswordScreenState extends State<SetPasswordScreen> {
       setState(() {});
       bool response = await setPasswordRequest(formValues); //api calling
       if (response == true) {
-        if(mounted){
-          Navigator.pushNamedAndRemoveUntil(context, "/login", (route) => false);
-
+        if (mounted) {
+          Navigator.pushNamedAndRemoveUntil(
+              context, "/login", (route) => false);
         }
       } else {
         isLoading = false;
@@ -67,7 +67,10 @@ class _SetPasswordScreenState extends State<SetPasswordScreen> {
             alignment: Alignment.center,
             child: isLoading
                 ? const Center(
-                    child: CircularProgressIndicator(backgroundColor: Colors.green,color: Colors.white,),
+                    child: CircularProgressIndicator(
+                      backgroundColor: Colors.green,
+                      color: Colors.white,
+                    ),
                   )
                 : SingleChildScrollView(
                     padding: const EdgeInsets.all(30),

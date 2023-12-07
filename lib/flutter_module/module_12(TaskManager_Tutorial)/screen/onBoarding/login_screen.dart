@@ -28,9 +28,8 @@ class _LogInScreenState extends State<LogInScreen> {
       setState(() {});
       bool response = await loginRequest(formValues); //API calling
       if (response == true) {
-        if (mounted){
-          Navigator.pushNamedAndRemoveUntil(
-              context, "/", (route) => false);
+        if (mounted) {
+          Navigator.pushNamedAndRemoveUntil(context, "/", (route) => false);
         }
       } else {
         isLoading = false;
@@ -49,7 +48,10 @@ class _LogInScreenState extends State<LogInScreen> {
             alignment: Alignment.center,
             child: isLoading
                 ? (const Center(
-                    child: CircularProgressIndicator(backgroundColor: Colors.green,color: Colors.white,),
+                    child: CircularProgressIndicator(
+                      backgroundColor: Colors.green,
+                      color: Colors.white,
+                    ),
                   ))
                 : SingleChildScrollView(
                     padding: const EdgeInsets.all(30),

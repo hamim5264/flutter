@@ -21,7 +21,7 @@ AppBar taskAppBar(context, profileData) {
             width: 10,
           ),
           InkWell(
-            onTap: (){
+            onTap: () {
               Navigator.pushNamed(context, "/profileScreen");
             },
             child: Column(
@@ -44,17 +44,27 @@ AppBar taskAppBar(context, profileData) {
     ),
     actions: [
       IconButton(
-          onPressed: () {
-            Navigator.pushNamed(context, "/taskCreate");
-          },
-          icon: const Icon(CupertinoIcons.add_circled, color: Colors.white,size: 28,),),
+        onPressed: () {
+          Navigator.pushNamed(context, "/taskCreate");
+        },
+        icon: const Icon(
+          CupertinoIcons.add_circled,
+          color: Colors.white,
+          size: 28,
+        ),
+      ),
       IconButton(
-          onPressed: () async {
-            await removeToken();
-            Navigator.pushNamedAndRemoveUntil(
-                context, "/login", (route) => false);
-          },
-          icon: const Icon(CupertinoIcons.person_crop_circle_badge_xmark, color: Colors.white, size: 28,),),
+        onPressed: () async {
+          await removeToken();
+          Navigator.pushNamedAndRemoveUntil(
+              context, "/login", (route) => false);
+        },
+        icon: const Icon(
+          CupertinoIcons.person_crop_circle_badge_xmark,
+          color: Colors.white,
+          size: 28,
+        ),
+      ),
     ],
   );
 }

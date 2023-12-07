@@ -14,6 +14,7 @@ const colorDarkBlue = Color.fromRGBO(44, 62, 80, 1);
 const colorLightGray = Color.fromRGBO(135, 142, 150, 1);
 const colorLight = Color.fromRGBO(211, 211, 211, 1);
 const statusChipColor = Colors.cyan;
+
 ///HeadLine Text Style
 TextStyle head1Text(textColor) {
   return TextStyle(
@@ -110,11 +111,10 @@ ButtonStyle appButtonStyle() {
 ///Button text style
 TextStyle buttonTextStyle() {
   return const TextStyle(
-    fontSize: 14,
-    fontFamily: 'poppins',
-    fontWeight: FontWeight.w400,
-    color: Colors.white
-  );
+      fontSize: 14,
+      fontFamily: 'poppins',
+      fontWeight: FontWeight.w400,
+      color: Colors.white);
 }
 
 ///Status style

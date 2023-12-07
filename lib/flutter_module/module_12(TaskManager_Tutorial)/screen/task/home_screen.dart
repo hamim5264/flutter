@@ -15,11 +15,15 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   int tabIndex = 0;
-Map<String, String> profileData = {"email":"", "firstName":"", "lastName":"", "photo": defaultProfilePic};
+  Map<String, String> profileData = {
+    "email": "",
+    "firstName": "",
+    "lastName": "",
+    "photo": defaultProfilePic
+  };
 
-  onItemTapped(int index){
+  onItemTapped(int index) {
     tabIndex = index;
     setState(() {});
   }
@@ -31,18 +35,23 @@ Map<String, String> profileData = {"email":"", "firstName":"", "lastName":"", "p
     const CancelTaskList(),
   ];
 
-readAppBarData()async{
-  String? email = await readUserData("email");
-  String? firstName = await readUserData("firstName");
-  String? lastName = await readUserData("lastName");
-  String? img = await readUserData("photo");
+  readAppBarData() async {
+    String? email = await readUserData("email");
+    String? firstName = await readUserData("firstName");
+    String? lastName = await readUserData("lastName");
+    String? img = await readUserData("photo");
 
-  setState(() {
-    profileData = {"email":'$email', "firstName": '$firstName', "lastName":'$lastName', "photo": '$defaultProfilePic'};
-  });
-}
+    setState(() {
+      profileData = {
+        "email": '$email',
+        "firstName": '$firstName',
+        "lastName": '$lastName',
+        "photo": '$defaultProfilePic'
+      };
+    });
+  }
 
-@override
+  @override
   void initState() {
     readAppBarData();
     super.initState();

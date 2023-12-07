@@ -29,7 +29,7 @@ class _PinVerificationScreenState extends State<PinVerificationScreen> {
       String? emailAddress = await readUserData("EmailVerification");
       bool response = await verifyOTPRequest(emailAddress, formValues["otp"]);
       if (response == true) {
-        if(mounted){
+        if (mounted) {
           Navigator.pushNamed(context, "/setPassword");
         }
       } else {
@@ -49,7 +49,10 @@ class _PinVerificationScreenState extends State<PinVerificationScreen> {
             alignment: Alignment.center,
             child: isLoading
                 ? const Center(
-                    child: CircularProgressIndicator(backgroundColor: Colors.green,color: Colors.white,),
+                    child: CircularProgressIndicator(
+                      backgroundColor: Colors.green,
+                      color: Colors.white,
+                    ),
                   )
                 : SingleChildScrollView(
                     padding: const EdgeInsets.all(30),

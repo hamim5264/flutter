@@ -28,10 +28,9 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
       bool response =
           await verifyEmailRequest(formValues["email"]); //api calling
       if (response == true) {
-        if(mounted){
+        if (mounted) {
           Navigator.pushNamed(context, "/pinVerification");
         }
-
       } else {
         isLoading = false;
         setState(() {});
@@ -49,7 +48,10 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
             alignment: Alignment.center,
             child: isLoading
                 ? const Center(
-                    child: CircularProgressIndicator(backgroundColor: Colors.green,color: Colors.white,),
+                    child: CircularProgressIndicator(
+                      backgroundColor: Colors.green,
+                      color: Colors.white,
+                    ),
                   )
                 : SingleChildScrollView(
                     padding: const EdgeInsets.all(30),

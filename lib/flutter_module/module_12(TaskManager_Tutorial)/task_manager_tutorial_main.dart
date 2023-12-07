@@ -23,6 +23,7 @@ class MyTaskManager extends StatelessWidget {
   final String firstRoute;
 
   const MyTaskManager(this.firstRoute, {super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

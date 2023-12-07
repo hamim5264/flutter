@@ -32,7 +32,7 @@ class _TaskCreateScreenState extends State<TaskCreateScreen> {
       setState(() {});
       bool response = await taskCreateRequest(formValues);
       if (response == true) {
-        if(mounted){
+        if (mounted) {
           Navigator.pushNamedAndRemoveUntil(context, "/", (route) => false);
         }
       } else {
@@ -56,7 +56,10 @@ class _TaskCreateScreenState extends State<TaskCreateScreen> {
             alignment: Alignment.center,
             child: isLoading
                 ? (const Center(
-                    child: CircularProgressIndicator(backgroundColor: Colors.green,color: Colors.white,),
+                    child: CircularProgressIndicator(
+                      backgroundColor: Colors.green,
+                      color: Colors.white,
+                    ),
                   ))
                 : SingleChildScrollView(
                     padding: const EdgeInsets.all(30),
