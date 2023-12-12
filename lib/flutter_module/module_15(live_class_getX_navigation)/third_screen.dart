@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ostad_flutter_project/flutter_module/module_15(live_class)/home_screen.dart';
-import 'package:ostad_flutter_project/flutter_module/module_15(live_class)/second_screen.dart';
+import 'package:ostad_flutter_project/flutter_module/module_15(live_class_getX_navigation)/home_screen.dart';
+import 'package:ostad_flutter_project/flutter_module/module_15(live_class_getX_navigation)/second_screen.dart';
 
 class ThirdScreen extends StatelessWidget {
   const ThirdScreen({super.key});

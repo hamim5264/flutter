@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ostad_flutter_project/flutter_module/module_15(live_class)/counter_state_controller.dart';
-import 'package:ostad_flutter_project/flutter_module/module_15(live_class)/second_screen.dart';
+import 'package:ostad_flutter_project/flutter_module/module_15(live_class_getX_navigation)/counter_state_controller.dart';
+import 'package:ostad_flutter_project/flutter_module/module_15(live_class_getX_navigation)/second_screen.dart';
 
 class CounterHomeScreen extends StatefulWidget {
   const CounterHomeScreen({super.key});
@@ -32,10 +32,10 @@ class _CounterHomeScreenState extends State<CounterHomeScreen> {
               );
             }),
             ElevatedButton(
-                onPressed: (){
-                  Get.to(SecondScreen());
-                },
-                child: const Text("Go to Second Screen"),
+              onPressed: () {
+                Get.to(const SecondScreen());
+              },
+              child: const Text("Go to Second Screen"),
             ),
           ],
         ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ostad_flutter_project/flutter_module/module_15(live_class)/counter_state_controller.dart';
-import 'package:ostad_flutter_project/flutter_module/module_15(live_class)/home_screen.dart';
+import 'package:ostad_flutter_project/flutter_module/module_15(live_class_getX_navigation)/counter_state_controller.dart';
+import 'package:ostad_flutter_project/flutter_module/module_15(live_class_getX_navigation)/home_screen.dart';
 
 class GetXDependencyBinder extends Bindings {
   ///Get dependency manager
